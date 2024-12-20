@@ -63,6 +63,7 @@ As this project is in early development, we welcome discussions and suggestions.
 ## License
 
 (License information pending)
+ -  Until then, all rights reserved.
 
 ## Contact
 
