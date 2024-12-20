@@ -8,6 +8,23 @@ This project explores the effectiveness of different language representations fo
 - A custom symbolic language using mathematical symbols (⊕, ⊖, ⊗, etc.)
 - Natural language descriptions of mathematical operations
 
+## Initial Results
+
+Comparison between Custom and Natural language approaches:
+
+| Metric           | Custom | Natural |
+|-----------------|--------|----------|
+| Vocabulary Size | 56     | 70       |
+| Model Size      | 145217 | 146113   |
+| Avg Epoch Time  | 6.546  | 30.422   |
+| Epochs to 95%   | 14     | 22       |
+| Final Accuracy  | 99.85% | 98.95%   |
+
+Key findings:
+- Custom language approach achieves higher accuracy with fewer training epochs
+- Significantly faster training time (approximately 4.6x faster per epoch)
+- Smaller vocabulary size and slightly more compact model
+
 ## Features
 
 Current implementation includes:
@@ -44,10 +61,22 @@ The project is in active development with:
 - [x] Custom symbolic language
 - [x] Natural language processing
 - [x] Training infrastructure
+- [x] Initial performance benchmarks
+- [ ] Custom language integration with LLM
+  - [ ] Chain-of-Thought reasoning using custom symbols
+  - [ ] System prompt templates
+  - [ ] Fine-tuning pipeline
 - [ ] Comprehensive testing suite
 - [ ] Performance optimizations
 - [ ] Extended documentation
 - [ ] Web interface
+
+### Roadmap
+
+The primary goal is to develop a small Language Model that can leverage the custom symbolic language for:
+1. More efficient mathematical reasoning through Chain-of-Thought prompting
+2. Compact system prompts using symbolic representations
+3. Hybrid natural language + symbolic responses
 
 ## Getting Started
 
